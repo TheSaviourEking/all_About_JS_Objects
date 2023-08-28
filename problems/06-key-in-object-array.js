@@ -21,6 +21,13 @@ keyInObjectArray(objArray, 'animal'); // => false
 
 function keyInObjectArray(objArray, keyString) {
   // Your code here
+  let result = false;
+  objArray.forEach((obj) => {
+    if (keyString in obj) {
+      result = true;
+    }
+  });
+  return result;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
