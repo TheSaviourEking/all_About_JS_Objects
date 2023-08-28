@@ -11,7 +11,9 @@ restSum(0); // => 0
 
 function restSum(...otherNums) {
   // Your code here
+  return otherNums.reduce((sum, value) => {
+    return sum + value;
+  })
 }
-
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = restSum;
